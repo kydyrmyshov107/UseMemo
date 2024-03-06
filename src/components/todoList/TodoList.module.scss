@@ -1,0 +1,240 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  input {
+    margin: 30px;
+    background: white;
+    border: none;
+    outline: none;
+    max-width: 190px;
+    padding: 7px 24px;
+    font-size: 15px;
+    border-radius: 9999px;
+    box-shadow: inset 2px 5px 10px rgb(255, 255, 255);
+    color: #436eca;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+  }
+  button {
+    align-items: center;
+    appearance: none;
+    background-color: #fcfcfd;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.2) 0 2px 4px,
+      rgba(45, 35, 66, 0.15) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395a;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "Courier New", Courier, monospace;
+    height: 34px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow 0.15s, transform 0.15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  button:focus {
+    box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+      rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  }
+
+  button:hover {
+    box-shadow: rgba(45, 35, 66, 0.3) 0 4px 8px,
+      rgba(45, 35, 66, 0.2) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+
+  button:active {
+    box-shadow: #d6d6e7 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+}
+.button {
+  button {
+    background: linear-gradient(
+      var(--ds-background-accent-blue-bolder, #89b0ee),
+      var(--ds-background-accent-teal-bolder, #0b43d1)
+    );
+    position: relative;
+    left: 730px;
+    top: 10px;
+    border: none;
+    padding: 9px 22px;
+    border-radius: 6px;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+  }
+}
+
+.aside {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 50px;
+
+  .editStyle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    border: 2px solid;
+    border-radius: 7px;
+    padding: 20px;
+    input {
+      border: none;
+      padding: 1rem;
+      border-radius: 1rem;
+      color: #36395a;
+      background: #ffffff;
+
+      transition: 0.3s;
+    }
+
+    input:focus {
+      background: #e8e8e8;
+      box-shadow: inset 20px 20px 60px #c5c5c5, inset -20px -20px 60px #ffffff;
+      transition: 0.3s;
+    }
+
+    .bar {
+      display: flex;
+      gap: 10px;
+      button {
+        align-items: center;
+        appearance: none;
+        background-color: #fcfcfd;
+        border-radius: 4px;
+        border-width: 0;
+        box-shadow: rgba(45, 35, 66, 0.2) 0 2px 4px,
+          rgba(45, 35, 66, 0.15) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+        box-sizing: border-box;
+        color: #36395a;
+        cursor: pointer;
+        display: inline-flex;
+        font-family: "Courier New", Courier, monospace;
+        height: 34px;
+        justify-content: center;
+        line-height: 1;
+        list-style: none;
+        overflow: hidden;
+        padding-left: 16px;
+        padding-right: 16px;
+        position: relative;
+        text-align: left;
+        text-decoration: none;
+        transition: box-shadow 0.15s, transform 0.15s;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+        will-change: box-shadow, transform;
+        font-size: 15px;
+        font-weight: bold;
+      }
+
+      button:focus {
+        box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+          rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+      }
+
+      button:hover {
+        box-shadow: rgba(45, 35, 66, 0.3) 0 4px 8px,
+          rgba(45, 35, 66, 0.2) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+        transform: translateY(-2px);
+      }
+
+      button:active {
+        box-shadow: #d6d6e7 0 3px 7px inset;
+        transform: translateY(2px);
+      }
+    }
+  }
+  .Render {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    border-radius: 7px;
+
+    .buttons {
+      display: flex;
+      gap: 50px;
+      button {
+        align-items: center;
+        appearance: none;
+        background-color: #fcfcfd;
+        border-radius: 4px;
+        border-width: 0;
+        box-shadow: rgba(45, 35, 66, 0.2) 0 2px 4px,
+          rgba(45, 35, 66, 0.15) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+        box-sizing: border-box;
+        color: #36395a;
+        cursor: pointer;
+        display: inline-flex;
+        font-family: "Courier New", Courier, monospace;
+        height: 34px;
+        justify-content: center;
+        line-height: 1;
+        list-style: none;
+        overflow: hidden;
+        padding-left: 16px;
+        padding-right: 16px;
+        position: relative;
+        text-align: left;
+        text-decoration: none;
+        transition: box-shadow 0.15s, transform 0.15s;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+        will-change: box-shadow, transform;
+        font-size: 15px;
+        font-weight: bold;
+      }
+
+      button:focus {
+        box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+          rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+      }
+
+      button:hover {
+        box-shadow: rgba(45, 35, 66, 0.3) 0 4px 8px,
+          rgba(45, 35, 66, 0.2) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+        transform: translateY(-2px);
+      }
+
+      button:active {
+        box-shadow: #d6d6e7 0 3px 7px inset;
+        transform: translateY(2px);
+      }
+    }
+    img {
+      width: 250px;
+      height: 300px;
+      filter: grayscale(100%);
+      transition: 1s all ease-in-out;
+      &:hover {
+        filter: grayscale(10%);
+      }
+    }
+  }
+}
